@@ -21,8 +21,9 @@ ${data.contribute}
 ## Tests
 ${data.tests}
 ## Questions
-${data.userName}
-${data.email}
+You can find my github account at
+[${data.userName}](https://github.com/${data.userName})  
+${(data.email?"Or you can email me " + data.email : "")}
 `;
 }
 
