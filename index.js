@@ -64,16 +64,16 @@ function writeToFile(fileName, data) {
         if(err){
             throw err
         }
-        else console.log("READMEtest.md created")
+        else console.log(`${fileName} created`)
     });
 }
 
-// function to initialize program
+// function that will initialize the program
 function init() {
     inquirer
         .prompt(questions)
-        .then(answers => writeToFile("READMEtest.md", answers));
+        .then(answers => writeToFile(`${answers.title}.md`, answers));
 }
 
-// function call to initialize program
+
 init();
